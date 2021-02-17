@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>хочу кушац</title>
+    <script>
+        $(document).ready(function(){
+            $(".circle_border").click(function(){
+                $(".text_center").addClass("hidden");
+            });
+            $(".circle_border").click(function(){
+                $(".text, .container_for_stopwatch_static").addClass("hide");
+            });
+            $(".circle_border").click(function(){
+                $(".container_for_stopwatch").css('display', 'flex');
+            });
+            $(".circle_border").click(function(){
+                $(".time_animation_2").css('display', 'none');
+            });
+            $(".circle_border").click(function(){
+                $(".text_record").css('display', 'flex');
+            });
+            $(".circle_border").click(function(){
+                $(".red_circle").css('display', 'flex');
+            });
+        });
+    </script>
+    <script type="text/javascript">
+    function myFunc ()
+    {
+        setTimeout(function() {
+            var t = Math.round(Math.random() * (24 - 10) + 10);
+            document.getElementById("random_number").innerHTML = t;
+            myFunc();
+        }, 500);
+    }
+    function myFunction ()
+    {
+        setTimeout(function() {
+            var c = Math.round(Math.random() * (60 - 10) + 10);
+            console.info(c);
+            document.getElementById("random_number2").innerHTML = c;
+            myFunction();
+        }, 300);
+    }
+    function myFunctions ()
+    {
+        setTimeout(function() {
+            var e = Math.round(Math.random() * (60 - 10) + 10);
+            console.info(e);
+            document.getElementById("random_number3").innerHTML = e;
+            myFunctions();
+        }, 100);
+    }
+    function myFunctionsS ()
+    {
+        setTimeout(function() {
+            var m = Math.round(Math.random() * (60 - 10) + 10);
+            console.info(m);
+            document.getElementById("random_number4").innerHTML = m;
+            myFunctionsS();
+        }, 100);
+    }
+    myFunc();
+    myFunction();
+    myFunctions();
+    myFunctionsS();
+
+    </script>
+</head>
+<body>
+
+<div class="container_content">
+<div class="container top">
+    <div class="box">
+        <div class="button_of_record">
+            <div class="red_circle"></div>
+            <div class="text_record">
+                Запись
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="button_of_progress">
+            <div class="text_of_paranormal">
+                Паранормальные явления:
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container_center text_center">
+        <p>для начала записи нажимте кнопку <br>
+            </p>
+    </div>
+<div class="container2 bottom">
+    <div class="box_bottom">
+        <div class="time_animation">
+          <div class="time_animation_2">
+            <div class="container_for_stopwatch_static position_of">
+            <p class="text">00:00:00:00</p>
+            </div>
+          </div>
+          <div class="container_for_stopwatch">
+          <p id="random_number"></p>
+          <p>:</p>
+            <p id="random_number2"></p>
+            <p>:</p>
+            <p id="random_number3"></p>
+            <p>:</p>
+            <p id="random_number4"></p>
+          </div>
+        </div>
+
+    </div>
+    <div class="circle_border">
+       <div class="button_photo">
+           <div class="camera">
+
+           </div>
+       </div>
+    </div>
+           <div class="box_bottom2">
+             <div class="button_of_object_found">
+                <div class="text_found">
+                 Найден объект:
+                </div>
+             </div>
+           </div>
+    </div>
+</div>
+<div class="box_after_all"></div>
+</body>
+</html>

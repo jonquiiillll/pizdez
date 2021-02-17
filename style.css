@@ -1,0 +1,372 @@
+body {
+    background-color: black;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.text {
+  margin-top: -20px;
+}
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.line_first {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.line_second {
+    width: 3px;
+    height: 98%;
+    background-color: white;
+}
+.line_first_right {
+    width: 3px;
+    height: 100%;
+    float: right;
+    background-color: white;
+}
+.line_second_right {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+}
+.container_center {
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.box {
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    margin: 35px;
+    width: 20%;
+    height: 162px;
+    /*background-color: deeppink;*/
+}
+.hide {
+  display: none;
+}
+.box2 {
+    border-top: 3px solid white;
+    border-right: 3px solid white ;
+    margin: 35px;
+    width: 20%;
+    height: 162px;
+    display: flex;
+    justify-content: flex-end;
+    /*background-color: deeppink;*/
+}
+.box_bottom {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    display: flex;
+    margin: 35px;
+    width: 20%;
+    height: 162px;
+    /*background-color: deeppink;*/
+}
+.box_bottom2 {
+    border-bottom: 3px solid white;
+    display: flex;
+    border-right: 3px solid white;
+    justify-content: flex-end;
+    margin: 35px;
+    align-items: flex-end;
+    width: 20%;
+    height: 162px;
+    /*background-color: deeppink;*/
+}
+.container_content {
+    position: fixed;
+    height: 100vh;
+   flex-wrap: wrap;
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+}
+/*.box_after_all {*/
+/*    background-color: darkblue;*/
+/*    width: 100px;*/
+/*    height: 800px;*/
+
+/*}*/
+.line_bottom_left_first {
+    width: 3px;
+    height: 100%;
+    background-color: white;
+}
+.line_bottom_left_second {
+    align-self: flex-end;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.line_bottom_right_first {
+    width: 3px;
+    justify-content: space-between;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+.line {
+    height: 100%;
+    width: 3px;
+    background-color: white;
+    right: 0;
+    opacity: 0;
+    display: flex;
+}
+.line2 {
+    height: 100%;
+    width: 3px;
+    background-color: white;
+    right: 0;
+    display: flex;
+
+}
+.line_bottom {
+    position: absolute;
+    width: auto;
+    height: 3px;
+    background-color: white;
+    align-self: flex-end;
+}
+.line_bottom_right_second {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    display: flex;
+    align-self: flex-end;
+}
+.button_of_progress {
+    width: 200px;
+    height: 50px;
+    margin-right: 30px;
+    margin-top: 15px;
+    position: absolute;
+    /*background-color: white;*/
+}
+.red_circle {
+    display: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    background: #E10000;
+    transition: dark_red_circle 5s ease;
+    animation: dark_red_circle 3s linear infinite;
+}
+
+
+@keyframes dark_red_circle {
+   0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.big_frame {
+    width: 98.5%;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid white;
+    /*background-color: #380000;*/
+}
+.button_of_object_found {
+    width: auto;
+    height: 100px;
+    /*background-color: white;*/
+    position: absolute;
+    margin: 20px;
+}
+
+.time_animation {
+    width: 80%;
+    height: 90%;
+    align-self: flex-end;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: flex;
+}
+.time_animation_2 {
+    width: 80%;
+    height: 90%;
+    align-self: flex-end;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: flex;
+}
+.position_of {
+  align-items: flex-end;
+}
+.container_for_stopwatch_static {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: Roboto Mono;
+  align-items: flex-end;
+}
+.container_for_stopwatch {
+  width: 100%;
+  height: 100%;
+  display: none;
+  font-family: Roboto Mono;
+  align-items: flex-end;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+p {
+  color: white;
+  font-size: 30px
+}
+#random_number {
+  color: white;
+  font-size: 30px
+}
+#random_number2 {
+  color: white;
+  font-size: 30px
+}
+#random_number3 {
+  color: white;
+  font-size: 30px
+}
+.button_of_record {
+    width: auto;
+    margin: 20px;
+    position: absolute;
+    height: 50px;
+    display: flex;
+    float: left;
+}
+.text_record {
+    display: none;
+    padding-left: 25px;
+    width: 232px;
+    height: 38px;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.text_center {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.text_found {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: right;
+    color: #FFFFFF;
+}
+.main_part {
+  margin: 0 auto;
+}
+.circle_border {
+    display: flex;
+    align-self: flex-end;
+    margin: 30px;
+    width: 75px;
+    height: 75px;
+    border-radius: 60px;
+    border: 10px solid white;
+}
+.button_photo {
+    border-radius: 40px;
+    width: 59px;
+    margin: 0 auto;
+    height: 59px;
+    background-color: white;
+    display: flex;
+    align-self: center;
+    object-fit: cover;
+}
+.hidden {
+    opacity: 0;
+    transition: all .5s  linear;
+}
+.camera {
+    margin: 0 auto;
+    align-self: center;
+}
+.text_of_paranormal {
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: Roboto Mono;
+    line-height: 33px;
+    text-align: right;
+    color: #FFFFFF;
+}
